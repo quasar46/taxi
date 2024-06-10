@@ -1,0 +1,18 @@
+.burger-menu {
+	flex: 0 0 48px;
+	height: 48px;
+	width: 48px;
+	display: none;
+	background-image: url("../images/burger-menu.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	@media(max-width: 1023px) {
+		display: block;
+	}	
+	@media(max-width: 639px) {
+		flex: 0 0 40px;
+		height: 40px;
+		width: 40px;
+	}
+}

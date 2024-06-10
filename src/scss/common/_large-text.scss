@@ -1,0 +1,62 @@
+.large-text {
+    overflow: hidden;
+}
+
+.large-text__wrap {
+    position: relative;
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-position: right bottom, left bottom;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 198px;
+        height: 92px;
+        background-image: url("../images/image_car_gray_1.png");
+        background-size: cover;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        @media (max-width: 1023px) {
+            right: -150px;
+        }
+        @media (max-width: 639px) {
+            width: 102px;
+            height: 48px;
+            right: 0;
+            right: -50px;
+            bottom: 20px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 198px;
+        height: 92px;
+        background-image: url("../images/image_car_yellow_1.png");
+        background-size: cover;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        @media (max-width: 1023px) {
+            left: -150px;
+        }
+        @media (max-width: 639px) {
+            width: 102px;
+            height: 48px;
+            left: -50px;
+            bottom: 20px;
+        }
+    }
+    @media (max-width: 1439px) {
+        padding-bottom: 56px;
+    }
+    @media (max-width: 1023px) {
+        padding-bottom: 0;
+    }
+}
+
+.large-text__text {
+    margin-bottom: 0;
+}

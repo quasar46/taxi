@@ -1,0 +1,39 @@
+extends layout
+block main 
+	main
+		.breadcrumbs.container 
+			a(href="/") Главная
+			span Франшиза
+
+		section.franshiza
+			.container 
+				.franshiza__wrap 
+					.franshiza__head
+						h2.franshiza__title.title-center Приглашаем владельцев таксопарков от 50 и более машин к сотрудничеству по программе «Франшизы Next Taxi»
+						a(href="#feedback").btn.btn--arrow 	
+							span.btn__text.btn__text--yellow Оставить заявку
+							span.btn__arr.btn__arr--yellow
+
+
+		section.franshiza-content 
+			.container 
+				h2.title-center Франшиза NEXT <br> позволит вам
+				.franshiza-content__wrap 
+					.franshiza-content__item
+						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="22" rx="4" fill="#FBD34C"/></svg>
+						span Внедрить лучшие принципы работы легального таксопарка, при этом значительно увеличив вашу рентабельность.
+					.franshiza-content__item
+						<svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 4C19 1.79086 20.7909 0 23 0H37C39.2091 0 41 1.79086 41 4V18C41 20.2091 39.2091 22 37 22H23C20.7909 22 19 20.2091 19 18V4Z" fill="#FBD34C"/><path d="M0 24C0 21.7909 1.79086 20 4 20H18C20.2091 20 22 21.7909 22 24V38C22 40.2091 20.2091 42 18 42H4C1.79086 42 0 40.2091 0 38V24Z" fill="#FBD34C"/><path d="M20 17L15.5 23.5L20 26L24.5 19.5L20 17Z" fill="#FBD34C"/></svg>
+
+						span Обучим сотрудников тем принципам работы, которые позволяют NEXT быть одной из самых успешных компаний на рынке такси.
+					.franshiza-content__item
+						<svg width="63" height="42" viewBox="0 0 63 42" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 4C19 1.79086 20.7909 0 23 0H37C39.2091 0 41 1.79086 41 4V18C41 20.2091 39.2091 22 37 22H23C20.7909 22 19 20.2091 19 18V4Z" fill="#FBD34C"/><path d="M0 24C0 21.7909 1.79086 20 4 20H18C20.2091 20 22 21.7909 22 24V38C22 40.2091 20.2091 42 18 42H4C1.79086 42 0 40.2091 0 38V24Z" fill="#FBD34C"/><path d="M20 17L15.5 23.5L20 26L24.5 19.5L20 17Z" fill="#FBD34C"/><rect x="41" y="20" width="22" height="22" rx="4" fill="#FBD34C"/></svg>
+
+						span При помощи NEXT вы сможете внедрить эффективные рабочие процессы во всем таксопарке или в отдельно взятых его департаментах.
+
+
+
+
+
+
+		include modules/feedback

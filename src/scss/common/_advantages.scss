@@ -1,0 +1,124 @@
+.advantages {
+    background-color: var(--color-base);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media (max-width: 1023px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+.advantages__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 24px;
+    @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.advantages__item {
+    position: relative;
+    width: 312px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 335px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        @media (max-width: 1023px) {
+            display: none;
+        }
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+        background-color: var(--color-yellow);
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+        margin-left: auto;
+    }
+    &:first-child {
+        &::before {
+            background-image: url("../images/adv1.png");
+            width: 237px;
+            height: 213px;
+            background-size: cover;
+            z-index: 1;
+			left: 100%;
+			bottom: 0;
+        }
+        @media (max-width: 1023px) {
+            order: 0;
+        }
+    }
+    &:nth-child(2) {
+        &::before {
+            background-image: url("../images/adv2.png");
+            width: 274px;
+            height: 249px;
+            left: 77%;
+            bottom: 0;
+            z-index: 10;
+            background-size: cover;
+        }
+        @media (max-width: 1023px) {
+            order: 2;
+        }
+    }
+    &:nth-child(3) {
+        &::before {
+            background-image: url("../images/adv3.png");
+            width: 261px;
+            height: 248px;
+            background-size: cover;
+			right: 100%;
+			bottom: 0;
+        }
+        @media (max-width: 1023px) {
+            order: 1;
+        }
+    }
+    &:last-child {
+        &::before {
+            content: "";
+            background-image: url("../images/adv4_1.png");
+            width: 219px;
+            height: 264px;
+            left: -126px;
+            background-size: cover;
+            z-index: 2;
+        }
+        &::after {
+            content:"";
+            position: absolute;
+            background-image: url("../images/adv4_2.png");
+            width: 114px;
+            height: 208px;
+            background-size: cover;
+            right: 100%;
+            z-index: 1;
+            top: 28%;
+            @media(max-width: 1023px) {
+                display: none;
+            }
+        }
+        @media (max-width: 1023px) {
+            order: 3;
+        }
+    }
+    @media (max-width: 1439px) {
+        width: 304px;
+    }
+    @media (max-width: 1023px) {
+        width: 100%;
+        min-height: 324px;
+    }
+}

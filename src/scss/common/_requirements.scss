@@ -1,0 +1,59 @@
+.requirements__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-base);
+    border-radius: 40px;
+    @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.requirements__content {
+    display: flex;
+    flex-direction: column;
+	align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+	@media(max-width: 639px) {
+		padding: 24px 16px;
+		gap: 32px;
+	}
+}
+
+.requirements__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/shashka.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.requirements__title {
+    color: var(--color-white);
+    margin-bottom: 0;
+}
+
+.requirements__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.requirements__item {
+    color: var(--color-yellow);
+    font-family: $fontAdd;
+}
+
+.requirenents__pic {
+    display: flex;
+    margin-top: auto;
+}

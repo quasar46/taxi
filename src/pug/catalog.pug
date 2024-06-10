@@ -1,0 +1,93 @@
+extends layout
+block main 
+	main
+		.breadcrumbs.container 
+			a(href="/") Главная
+			span Аренда  
+		section.catalog
+			.container 
+				.catalog__wrap 
+					h2.catalog__title.title-center Предлагаем в аренду легковые такси, <span>полностью готовые к выполнению заказов</span>
+					.catalog__wrap 
+					.category-list 
+						span.category-list__btn  Все
+						span.category-list__btn Эконом
+						span.category-list__btn Комфорт
+						span.category-list__btn Комфорт + 
+						span.category-list__btn Бизнес
+						span.category-list__btn Минивен
+					.catalog__cards 
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+					.pagination 
+						button.pagination__btn
+							svg(width='16' height='16')
+								use(href='#icn-arrow-left')
+						a(href="") 1
+						a(href="") 2
+						span ...
+						a(href="") 5  
+						button.pagination__btn
+							svg(width='16' height='16')
+								use(href='#icn-arrow-right')
+
+		include modules/animation
+
+		include modules/info-block
+		include modules/quiz
+		include modules/feedback

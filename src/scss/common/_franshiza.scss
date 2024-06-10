@@ -1,0 +1,61 @@
+.franshiza {
+	overflow: hidden;
+}
+
+.franshiza__head {
+    display: flex;
+    flex-direction: column;
+}
+
+.franshiza__title {
+    position: relative;
+    max-width: 910px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 198px;
+        height: 92px;
+        background-image: url("../images/image_car_gray_1.png");
+        background-size: cover;
+        right: -50px;
+        bottom: -50px;
+        z-index: -1;
+		@media(max-width: 1023px) {
+			bottom: auto;
+			top: 0;
+			right: -100px;
+		}
+		@media(max-width: 639px) {
+			width: 105px;
+			height: 48px;
+			right: -60px;
+		}
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 198px;
+        height: 92px;
+        background-image: url("../images/image_car_yellow_1.png");
+        background-size: cover;
+        left: -50px;
+        bottom: -50px;
+        z-index: -1;
+		@media(max-width: 1023px) {
+			bottom: auto;
+			top: 0;
+			left: -100px;
+		}
+		@media(max-width: 639px) {
+			width: 105px;
+			height: 48px;
+			left: -60px;
+		}
+    }
+	@media(max-width: 639px) {
+		font-size: 20px;
+	}
+}

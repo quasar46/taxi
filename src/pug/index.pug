@@ -1,0 +1,224 @@
+extends layout
+block main 
+	main
+		section.first-banner 
+			.container
+				.first-banner__wrap 
+					h1.first-banner__title 
+						| Аренда авто <br>
+						| от 1500 руб/день
+					ul.first-banner__list 
+						li.first-banner__item
+							svg(width='40' height='40')
+								use(href='#icn-1')
+							span Без залога, депозита <br> и скрытых платежей
+						li.first-banner__item
+							svg(width='40' height='40')
+								use(href='#icn-2')
+							span Удобный вывод <br> денежных средств
+						li.first-banner__item
+							svg(width='40' height='40')
+								use(href='#icn-3')
+							span Широкий <br> выбор авто
+					.first-banner__btns 
+						button.btn.btn--arrow.open-modal
+							span.btn__text Оставить заявку
+							span.btn__arr
+
+		section.large-text 
+			.container 
+				.large-text__wrap 	
+					h2.large-text__text Большой выбор готовых легковых такси в аренду 
+						span на комфортных условиях от команды профессионалов
+
+
+		section 
+			h2.title-center Оформление за 30 минут, 
+				span прозрачные финансовые расчеты, круглосуточная поддержка водителей
+
+		include modules/animation
+
+		section.advantages 
+			.container 
+				.advantages__wrap 
+					.advantages__item
+						h3 Большой <br> выбор авто
+						span Комфортные условия аренды готовых легковых такси с необходимым комплектом документов.
+					.advantages__item
+						h3 Оформление <br> только по <br> 2 документам
+						span Заключение договора и выдача авто по паспорту и водительскому удостоверению.
+					.advantages__item
+						h3 Получение <br> заказов в тот <br> же день
+						span Наш парк -сертифицированный партнер Яндекс.Такси, подключаем к Яндекс.Pro
+					.advantages__item
+						h3 Поддержка <br> водителей <br> 24/7
+						span Работает собственный колл-центр, доступный 24 часа в сутки.
+
+		section.conditions 
+			.container
+				h2.conditions__title Доступные условия аренды
+				.conditions__wrap 
+					.conditions__item
+						.flipper
+							.front 
+								span.conditions__head График
+								span.conditions__footer 6/1
+							.back
+								span.conditions__head график 7/0
+								.conditions__footer
+									span.conditions__text Оплата списывается ежедневно, двумя платежами.
+									button.btn.btn--primary.open-modal
+										span.btn__text Оставить заявку
+					.conditions__item
+						.flipper
+							.front 
+								span.conditions__head График
+								span.conditions__footer 6/1
+							.back
+								span.conditions__head график 7/0
+								.conditions__footer
+									span.conditions__text Оплата списывается ежедневно, двумя платежами.
+									button.btn.btn--primary.open-modal
+										span.btn__text Оставить заявку
+
+		section.requirements
+			.container 
+				.requirements__wrap
+					.requirements__content
+						h2.requirements__title Требования <br> к водителям
+						ul.requirements__list 
+							li.requirements__item Водительские права РФ
+							li.requirements__item Возраст от 21 года
+							li.requirements__item Стаж вождения от 3 лет
+						button.btn.btn--arrow.open-modal
+							span.btn__text Оставить заявку
+							span.btn__arr
+					.requirenents__pic
+						img(src=require('../images/requirements-pic.png'), alt='')
+
+		section.catalog
+			.container 
+				h2.catalog__title.title-center Выбери авто
+				.catalog__wrap 
+					.category-list 
+						span.category-list__btn  Все
+						span.category-list__btn Эконом
+						span.category-list__btn Комфорт
+						span.category-list__btn Комфорт + 
+						span.category-list__btn Бизнес
+						span.category-list__btn Минивен
+					.catalog__cards 
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.mini-card 
+							img(src=require('../images/card-pic.png'), alt='').mini-card__thumb
+							.mini-card__content 
+								span.mini-card__title Hyundai Solaris
+								span.mini-card__price 
+									span.mini-card__price-old 2 500
+									span.mini-card__price-current <i>от</i> 2500 ₽ / сут
+							.mini-card__btns 
+								span.btn.btn--yellow.open-modal Арендовать
+								span.btn.btn--white Заработок
+						.block-catalog-link 
+							span.block-catalog-link__title Перейти в каталог
+							span.block-catalog-link__text Вас ждут ещё более 1300 машин
+							a(href="/catalog.html").btn.btn--arrow 
+								span.btn__text Открыть каталог
+								span.btn__arr
+		include modules/quiz
+		section.last-news 
+			.container
+				h2.last-news__title Свежие новости 
+				.last-news__wrap.swiper.swiper-last-news 
+					.swiper-wrapper
+						.swiper-slide.last-news__card 
+							img(src=require('../images/news-card.jpg'), alt='').last-news__thumb
+							a(href="").last-news__name Название новости в одну-две строчки
+							.last-news__info
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-calendar')
+									| 02.05.2024
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-like')
+									| 123
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-view')
+									| 192
+
+						.swiper-slide.last-news__card 
+							img(src=require('../images/news-card.jpg'), alt='').last-news__thumb
+							a(href="").last-news__name Название новости в одну-две строчки
+							.last-news__info
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-calendar')
+									| 02.05.2024
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-like')
+									| 123
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-view')
+									| 192
+						.swiper-slide.last-news__card 
+							img(src=require('../images/news-card.jpg'), alt='').last-news__thumb
+							a(href="").last-news__name Название новости в одну-две строчки
+							.last-news__info
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-calendar')
+									| 02.05.2024
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-like')
+									| 123
+								span 
+									svg(width='16' height='16')
+										use(href='#icn-view')
+									| 192
+				.last-news__show-more Все новости
+		include modules/reviews
+		include modules/feedback

@@ -1,0 +1,127 @@
+.mini-card {
+    border-radius: 24px;
+    padding: 16px;
+    background-color: #eff0f2;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-card__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8px;
+    @media (max-width: 1439px) {
+        // flex-direction: column;
+        // align-items: flex-start;
+    }
+}
+
+.mini-card__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mini-card__title {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $fontAdd;
+}
+
+.mini-card__price {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    i {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $fontBase;
+        font-style: normal;
+    }
+    @media (max-width: 639px) {
+        width:auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.block-catalog-link {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--color-base);
+    border-radius: 24px;
+    padding: 40px;
+    .btn {
+        margin-top: auto;
+        @media (max-width: 1439px) {
+            display: flex;
+        }
+    }
+    .btn__text {
+        @media (max-width: 1439px) {
+            width: 100%;
+        }
+    }
+    .btn__arr {
+        @media (max-width: 1439px) {
+            display: none;
+        }
+    }
+    @media (max-width: 1439px) {
+        padding: 24px;
+    }
+    @media (max-width: 639px) {
+        gap: 16px;
+        min-height: 236px;
+    }
+}
+
+.block-catalog-link__title {
+    font-size: 40px;
+    font-weight: 500;
+    font-family: $fontAdd;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+    @media (max-width: 1439px) {
+        font-size: 32px;
+    }
+    @media (max-width: 639px) {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.block-catalog-link__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-white);
+    @media (max-width: 639px) {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.mini-card__price-old {
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #525b6a;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-yellow);
+        display: block;
+    }
+    @media (max-width: 639px) {
+        order: 1;
+    }
+}

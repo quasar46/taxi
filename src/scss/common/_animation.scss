@@ -1,0 +1,18 @@
+.animantion-aliment {
+	background-image: url("../images/ticker.svg");
+	background-size: contain;
+	background-repeat: repeat-x;
+	width: 3600px;
+	height: 100%;
+	left: -50%;
+	transform: translateX(calc(var(--scroll) * 0.2));
+}
+
+.animation {
+  position: relative;
+  overflow: hidden;
+  height: 42px;
+  @media(max-width: 639px) {
+	height: 30px;
+  }
+}

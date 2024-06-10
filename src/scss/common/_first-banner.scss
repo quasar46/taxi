@@ -1,0 +1,74 @@
+.first-banner {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.first-banner__wrap {
+    background-color: #202938;
+    padding: 40px;
+    border-radius: 40px;
+    background-image: url("../images/carlight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-size: cover;
+    @media (max-width: 1023px) {
+        padding: 24px;
+        background-image: url("../images/carlight-mob.png");
+        gap: 24px;
+        min-height: 600px;
+    }
+    @media (max-width: 639px) {
+        min-height: 645px;
+        background-image: url("../images/carlight-mob2.png");
+		border-radius: 24px;
+        background-position: bottom;
+    }
+}
+
+.first-banner__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @media (max-width: 639px) {
+        flex-direction: column;
+        align-items: flex-start;
+		gap: 16px;
+    }
+}
+
+.first-banner__item {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 16px;
+    svg {
+        @media (max-width: 639px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+	@media(max-width: 639px) {
+		gap: 8px;
+		font-size: 16px;
+	}
+}
+
+.first-banner__title {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    @media (max-width: 1439px) {
+        font-size: 44px;
+    }
+    @media (max-width: 1023px) {
+        font-size: 40px;
+    }
+    @media (max-width: 639px) {
+        font-size: 28px;
+    }
+}

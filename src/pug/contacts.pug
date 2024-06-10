@@ -1,0 +1,47 @@
+extends layoutMap 
+block main 
+	main
+		.breadcrumbs.container 
+			a(href="/") Главная
+			span Контакты
+		section.contacts 
+			.container 
+				.contacts__wrap 
+					h2.title-center Свяжитесь с нами
+					.contacts__content 
+						.contacts__block 
+							svg(width='40' height='40')
+								use(href='#icn-tel-black')
+							.contacts__block-content
+								span.contacts__block-name Телефон
+								a(href="tel:+74952606276") +7 (495) 260-62-76 
+							.contacts__social
+								a(href="" target="_blank")
+									svg(width='24' height='24')
+										use(href='#icn-vk-black') 
+								a(href="" target="_blank")
+									svg(width='24' height='24')
+										use(href='#icn-telegram-black')
+						.contacts__block 
+							svg(width='40' height='40')
+								use(href='#icn-mail-black')
+							.contacts__block-content
+								span.contacts__block-name Почта
+								a(href="mailto:info@next.ru") info@next.ru
+
+						.contacts__block 
+							svg(width='40' height='40')
+								use(href='#icn-marker-black')
+							.contacts__block-content
+								span.contacts__block-name Адрес
+								span.contacts__block-text Москва, Тюменский <br> проезд, 5, стр. 2
+
+						.contacts__block 
+							svg(width='40' height='40')
+								use(href='#icn-marker-black')
+							.contacts__block-content
+								span.contacts__block-name Адрес
+								span.contacts__block-text Екатеринбург, <br> Московская улица,  218Б
+					.contacts__map#map
+
+		include modules/feedback

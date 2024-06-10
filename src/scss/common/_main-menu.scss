@@ -1,0 +1,124 @@
+.main-menu {
+    margin: auto;
+    @media (max-width: 1023px) {
+        position: absolute;
+        left: 100%;
+        transform: scale(0);
+        z-index: 200;
+        transition: all 0.3s ease;
+        &.show {
+            display: flex;
+            flex-direction: column;
+            left: auto;
+            right: 0;
+            height: 100%;
+            top: 0;
+            transform: scale(1);
+            max-width: 348px;
+            width: 100%;
+            padding: 40px 20px;
+            background-color: var(--color-base);
+            transition: all 0.3s ease;
+        }
+    }
+    @media(max-width: 639px) {
+        &.show {
+            max-width: 100%;
+        }
+    }
+}
+
+.main-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $fontAdd;
+    }
+    @media (max-width: 1023px) {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+}
+
+.main-menu__item {
+    display: flex;
+}
+
+.main-menu__link {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    border-radius: 8px;
+    padding: 0 8px;
+    &.active {
+        background-color: #ffefbb;
+        @media (max-width: 1023px) {
+            color: var(--color-base);
+        }
+    }
+    &:hover {
+        color: #fbd34c;
+        transition: all 0.3s ease;
+    }
+    @media (max-width: 1023px) {
+        color: var(--color-white);
+    }
+}
+
+.main-menu__logo {
+    flex: 0 0 40px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.main-menu__header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    display: none;
+    @media(max-width: 1023px) {
+        display: flex;
+    }
+}
+
+.main-menu__footer {
+    display: none;
+    flex-direction: column;
+    color: var(--color-white);
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 40px;
+    .main-menu__fr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-base);
+        background-color: #FFEFBB;
+        border-radius: 8px;
+        height: 33px;
+        padding: 0 8px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $fontAdd;
+    }
+    @media(max-width: 1023px) {
+        display: flex;
+    }
+}
+
+.main-menu__btn {
+    display: none;
+    @media(max-width: 1023px) {
+        display: grid;
+        grid-template-columns: auto 54px;
+    }
+    span {
+        height: 54px;
+        font-size: 18px;
+    }
+}

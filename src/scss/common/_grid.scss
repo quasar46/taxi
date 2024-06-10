@@ -1,0 +1,51 @@
+.grid {
+    display: grid;
+    gap: 24px;
+    grid-template-areas:
+        "g1 g1 g2"
+        "g3 g4 g5"
+        "g6 g7 g8";
+    @media (max-width: 1439px) {
+        grid-template-areas:
+            "g1 g1 g2 g2"
+            "g3 g3 g4 g4"
+            "g5 g5 g6 g6"
+            "g7 g7 g8 g8";
+    }
+    @media (max-width: 1023px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .g1 {
+        grid-area: g1;
+    }
+
+    .g2 {
+        grid-area: g2;
+    }
+
+    .g3 {
+        grid-area: g3;
+    }
+
+    .g4 {
+        grid-area: g4;
+    }
+
+    .g5 {
+        grid-area: g5;
+    }
+
+    .g6 {
+        grid-area: g6;
+    }
+
+    .g7 {
+        grid-area: g7;
+    }
+
+    .g8 {
+        grid-area: g8;
+    }
+}

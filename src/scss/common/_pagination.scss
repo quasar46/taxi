@@ -1,0 +1,40 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $fontAdd;
+    a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: var(--color-yellow);
+            transition: all 0.3s ease;
+        }
+
+        &.active {
+            background-color: var(--color-base);
+            color: var(--color-yellow);
+        }
+    }
+    @media(max-width: 639px) {
+        margin-top: 24px;
+    }
+}
+
+.pagination__btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

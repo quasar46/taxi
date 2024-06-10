@@ -1,0 +1,39 @@
+header.header 
+	.container
+		.header__wrap
+			a.logo.header__logo(href="/")
+				svg(width='60' height='60')
+					use(href='#icn-logo')
+			.main-menu
+				.main-menu__header
+					svg.main-menu__logo(width='60' height='60')
+						use(href='#icn-logo')
+					button.main-menu__close 
+						img(src=require('../../images/close.svg'), alt='')
+				ul.main-menu__list
+					li.main-menu__item
+						a(href="catalog.html").main-menu__link.active Каталог
+					li.main-menu__item
+						a.main-menu__link(href="/about.html") О компании
+					li.main-menu__item
+						a.main-menu__link(href="/contacts.html") Контакты
+					li.main-menu__item
+						a.main-menu__link(href="/news.html") Новости
+				.main-menu__footer 
+					a.header__phone.header__phone--menu(href="tel:+74994507602")
+						svg(width='24' height='24')
+							use(href='#icn-phone')
+						| +7 (499) 450-76-02
+					//- a.main-menu__fr(href="https://next-franchise.ru/" target="_blank") Франшиза 
+					a.main-menu__fr(href="franshiza.html") Франшиза 
+				button.btn.btn--arrow.main-menu__btn.open-modal
+					span.btn__text Оставить заявку
+					span.btn__arr
+			select.select-city.select-city--header
+				option(value="") Москва 
+				option(value="") Санкт-петербург
+			a.header__phone(href="tel:+74994507602")
+				svg(width='24' height='24')
+					use(href='#icn-phone')
+				| +7 (499) 450-76-02
+			button.burger-menu

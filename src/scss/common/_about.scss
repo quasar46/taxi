@@ -1,0 +1,28 @@
+.about__subtitle {
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	font-family: $fontAdd;
+    span {
+        color: var(--color-yellow);
+    }
+	@media(max-width: 1439px) {
+		font-size: 32px;
+	}
+	@media(max-width: 639px) {
+		font-size: 20px;
+	}
+}
+
+.about__title {
+	margin-bottom: 0;
+}
+
+.about__head {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	@media(max-width: 639px) {
+		gap: 16px;
+	}
+}

@@ -1,0 +1,7 @@
+.recomendation {
+	.last-news__card {
+		@media(max-width: 639px) {
+			margin-right: 16px;
+		}
+	}
+}

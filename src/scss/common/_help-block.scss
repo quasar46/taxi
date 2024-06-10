@@ -1,0 +1,30 @@
+.help-block__wrap {
+    display: grid;
+    grid-template-columns: auto 312px;
+    @media (max-width: 1439px) {
+        grid-template-columns: auto 300px;
+    }
+    @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.help-block__title {
+    span {
+        color: var(--color-yellow);
+    }
+    @media (max-width: 1023px) {
+        margin-bottom: 24px;
+    }
+}
+
+.help-block__col-r {
+    span {
+        font-size: 18px;
+        font-weight: 500;
+        @media (max-width: 639px) {
+            font-size: 16px;
+        }
+    }
+}

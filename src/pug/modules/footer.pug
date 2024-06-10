@@ -1,0 +1,29 @@
+footer.footer 
+	.container 
+		.footer__wrap 
+			.footer__row
+				a.logo.footer__logo(href="") 
+					svg(width='85' height='85')
+						use(href='#icn-logo')
+				.footer__menu 
+					a(href="catalog.html") Каталог
+					a(href="about.html") О компании
+					a(href="contacts.html") Контакты
+					a(href="news.html") Новости
+				//- a.footer__fr(href="https://next-franchise.ru/" target="_blank") Франшиза 
+				a.footer__fr(href="franshiza.html") Франшиза 
+				a.footer__phone(href="tel:+74994507602")
+					svg(width='24' height='24')
+						use(href='#icn-phone')
+					| +7 (499) 450-76-02
+			.footer__row
+				span ©️NEXT, 2024
+				a(href="") Политика обработки персональных данных
+				a(href="") Все права защищены  
+
+
+.overlay
+include modal-feedback
+.btn-up
+	<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.83301 7.99967L8.49967 3.33301L13.1663 7.99967" stroke="#FBD34C" stroke-linecap="square"/><path d="M8.5 13.3333V4" stroke="#FBD34C" stroke-linecap="square"/></svg>
+	span Наверх

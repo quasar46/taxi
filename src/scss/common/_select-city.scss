@@ -1,0 +1,11 @@
+.select-city {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: $fontAdd;
+}
+
+.select-city--header {
+	@media(max-width: 1439px) {
+		display: none;
+	}
+}
